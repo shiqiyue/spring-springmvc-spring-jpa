@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<ehcache updateCheck="false" name="hibernateCache">
+	<!-- http://ehcache.org/ehcache.xml -->
+	<diskStore path="java.io.tmpdir/ehcache/hylc/hibernate" />
+
+	<!-- DefaultCache setting. -->
+	<defaultCache maxEntriesLocalHeap="10000" eternal="false" timeToIdleSeconds="300" timeToLiveSeconds="600"
+		overflowToDisk="true" maxEntriesLocalDisk="100000" />
+	
+	<cache name="com.zzy.hylc.entity.Admin" maxEntriesLocalHeap="2000" eternal="false"
+		timeToIdleSeconds="300" timeToLiveSeconds="600" overflowToDisk="false" />
+	<cache name="com.zzy.hylc.entity.User" maxEntriesLocalHeap="2000" eternal="false"
+		timeToIdleSeconds="300" timeToLiveSeconds="600" overflowToDisk="false" />	
+	<cache name="com.zzy.hylc.entity.UserInfo" maxEntriesLocalHeap="2000" eternal="false"
+		timeToIdleSeconds="300" timeToLiveSeconds="600" overflowToDisk="false" />
+	<cache name="com.zzy.hylc.entity.OrganizationInfo" maxEntriesLocalHeap="2000" eternal="false"
+		timeToIdleSeconds="300" timeToLiveSeconds="600" overflowToDisk="false" />			
+	
+	
+	
+	<cache name="com.zzy.hylc.entity.Product" maxEntriesLocalHeap="400" eternal="true"
+	    overflowToDisk="false" />
+	<cache name="com.zzy.hylc.entity.AssetsManagePlanInfo" maxEntriesLocalHeap="100" eternal="true"
+	    overflowToDisk="false" /> 
+	<cache name="com.zzy.hylc.entity.OverseasFundsInfo" maxEntriesLocalHeap="100" eternal="true"
+	    overflowToDisk="false" />
+	<cache name="com.zzy.hylc.entity.OverseasInsuranceInfo" maxEntriesLocalHeap="100" eternal="true"
+	    overflowToDisk="false" />
+	<cache name="com.zzy.hylc.entity.PeOrVcInfo" maxEntriesLocalHeap="100" eternal="true"
+	    overflowToDisk="false" />
+	<cache name="com.zzy.hylc.entity.PrivateFundsInfo" maxEntriesLocalHeap="100" eternal="true"
+	    overflowToDisk="false" />
+	<cache name="com.zzy.hylc.entity.TrustProductsInfo" maxEntriesLocalHeap="100" eternal="true"
+	    overflowToDisk="false" />    
+	<cache name="com.zzy.hylc.entity.ProductBrokerageRate" maxEntriesLocalHeap="1000" eternal="true"
+	    overflowToDisk="false" />
+	<cache name="com.zzy.hylc.entity.ProductDynamicInfo" maxEntriesLocalHeap="400" eternal="true"
+	    overflowToDisk="false" />
+	                     
+	    
+	<cache name="com.zzy.hylc.entity.News" maxEntriesLocalHeap="200" eternal="true"
+	    overflowToDisk="false" /> 
+	<cache name="com.zzy.hylc.entity.NewsType" maxEntriesLocalHeap="20" eternal="true"
+	    overflowToDisk="false" />        
+	 
+	<cache name="com.zzy.hylc.entity.OnlineBooking" maxEntriesLocalHeap="600" eternal="false"
+	    overflowToDisk="false" timeToIdleSeconds="300" timeToLiveSeconds="600"/> 
+	    
+	<cache name="com.zzy.hylc.entity.IntegralGoods" maxEntriesLocalHeap="200" eternal="true"
+	    overflowToDisk="false" />
+	<cache name="com.zzy.hylc.entity.IntegralGoodsPhoto" maxEntriesLocalHeap="600" eternal="true"
+	    overflowToDisk="false" /> 
+	<cache name="com.zzy.hylc.entity.IntegralOrderform" maxEntriesLocalHeap="600" eternal="false"
+	    overflowToDisk="false" timeToIdleSeconds="300" timeToLiveSeconds="600"/>
+	            
+	
+	<cache name="com.zzy.hylc.entity.Content" maxEntriesLocalHeap="10" eternal="true"
+		overflowToDisk="false" />
+	<cache name="com.zzy.hylc.entity.Bannerinfo" maxEntriesLocalHeap="10" eternal="true"
+		overflowToDisk="false" />
+	<cache name="com.zzy.hylc.entity.Role" maxEntriesLocalHeap="20" eternal="true"
+		overflowToDisk="false" />	
+	<cache name="com.zzy.hylc.entity.Sysinfo" maxEntriesLocalHeap="1" eternal="true"
+		overflowToDisk="false" />
+	<cache name="com.zzy.hylc.entity.QQCustomerService" maxEntriesLocalHeap="10" eternal="true"
+		overflowToDisk="false" />	
+	<cache name="com.zzy.hylc.entity.AppInfo" maxEntriesLocalHeap="5" eternal="true"
+		overflowToDisk="false" />
+		
+	<cache name="com.zzy.hylc.entity.UserBankInfo" maxEntriesLocalHeap="2000" eternal="false"
+		timeToIdleSeconds="300" timeToLiveSeconds="600" overflowToDisk="false" />	   
+	<cache name="com.zzy.hylc.entity.Orderform" maxEntriesLocalHeap="500" eternal="false"
+		timeToIdleSeconds="300" timeToLiveSeconds="600" overflowToDisk="false" />	
+	<cache name="com.zzy.hylc.entity.BrokerageDetail"  maxEntriesLocalHeap="2000" eternal="false"
+	    timeToIdleSeconds="300" timeToLiveSeconds="600"  overflowToDisk="false" />
+	<cache name="com.zzy.hylc.entity.ContractApply"  maxEntriesLocalHeap="500" eternal="false"
+	    timeToIdleSeconds="300" timeToLiveSeconds="600"  overflowToDisk="false" />
+	<cache name="com.zzy.hylc.entity.ContractCheckDetail"  maxEntriesLocalHeap="2000" eternal="false"
+	    timeToIdleSeconds="300" timeToLiveSeconds="600"  overflowToDisk="false" />
+	<cache name="com.zzy.hylc.entity.IntegralDetail"  maxEntriesLocalHeap="2000" eternal="false"
+	    timeToIdleSeconds="300" timeToLiveSeconds="600"  overflowToDisk="false" />
+	<cache name="com.zzy.hylc.entity.OrderformCheckDetail"  maxEntriesLocalHeap="2000" eternal="false"
+	    timeToIdleSeconds="300" timeToLiveSeconds="600"  overflowToDisk="false" />
+	<cache name="com.zzy.hylc.entity.PlatformStatistics"  maxEntriesLocalHeap="50" eternal="false"
+	    timeToIdleSeconds="300" timeToLiveSeconds="600"  overflowToDisk="false" />
+	<cache name="com.zzy.hylc.entity.UserRecommendDetail"  maxEntriesLocalHeap="2000" eternal="false"
+	    timeToIdleSeconds="300" timeToLiveSeconds="600"  overflowToDisk="false" />
+	<cache name="com.zzy.hylc.entity.Withdraw"  maxEntriesLocalHeap="500" eternal="false"
+	    timeToIdleSeconds="300" timeToLiveSeconds="600"  overflowToDisk="false" />
+	<cache name="com.zzy.hylc.entity.NewProductApply"  maxEntriesLocalHeap="500" eternal="false"
+	    timeToIdleSeconds="300" timeToLiveSeconds="600"  overflowToDisk="false" />
+	<cache name="com.zzy.hylc.entity.ProductFavorite" maxEntriesLocalHeap="2000" eternal="false"
+		timeToIdleSeconds="300" timeToLiveSeconds="600" overflowToDisk="false" />	
+	<cache name="com.zzy.hylc.entity.Feedback" maxEntriesLocalHeap="2000" eternal="false"
+		timeToIdleSeconds="300" timeToLiveSeconds="600" overflowToDisk="false" />	
+	<cache name="com.zzy.hylc.entity.Partners" maxEntriesLocalHeap="2000" eternal="false"
+		timeToIdleSeconds="300" timeToLiveSeconds="600" overflowToDisk="false" />
+
+		
+</ehcache>
